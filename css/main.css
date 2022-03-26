@@ -1,0 +1,143 @@
+:root {
+  --clr-primary: #24484f;
+  --clr-secondary: #10cab7;
+  --clr-gray: #637988;
+  --clr-white: #fff;
+}
+
+/* Global Rules Start */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Global Rules End */
+
+/* Header Start */
+header {
+  padding: 1.25rem;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  width: 75px;
+}
+.logo-wrapper img {
+  max-width: 100%;
+}
+
+.burger-icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.burger-icon:hover span:nth-child(2) {
+  width: 100%;
+}
+
+.burger-icon span {
+  background-color: var(--clr-primary);
+  margin-bottom: 5px;
+  height: 2px;
+  width: 100%;
+}
+
+.burger-icon span:nth-child(2) {
+  width: 65%;
+  transition: 350ms;
+}
+
+.main-nav_links {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 2rem 0.5rem 2rem;
+  background-color: var(--clr-primary);
+  list-style: none;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: 350ms;
+}
+
+.main-nav_links svg {
+  color: var(--clr-white);
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.links-menu {
+  font-size: 1.2em;
+}
+.links-social {
+  font-size: 0.8em;
+}
+
+.main-nav_links p {
+  color: var(--clr-gray);
+  margin-top: 1.5rem;
+}
+
+.main-nav_links li a {
+  text-decoration: none;
+  color: var(--clr-white);
+  display: block;
+  padding: 0.5rem;
+  transition: 250ms;
+}
+
+.main-nav_links li a:hover {
+  color: var(--clr-secondary);
+  transform: translateX(10px);
+}
+
+.main-nav_links p:last-child {
+  margin-top: auto;
+}
+/* Header End */
+
+/* Responsive */
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .main-nav_links {
+    width: 550px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
