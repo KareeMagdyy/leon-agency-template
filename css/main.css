@@ -22,6 +22,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+main {
+  position: relative;
+  overflow-x: hidden;
+}
 
 /* Global Rules End */
 
@@ -118,6 +122,30 @@ header .container {
   margin-top: auto;
 }
 /* Header End */
+.landing {
+  background-image: url(../img/landing.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 74.39px);
+  text-align: center;
+}
+
+.intro-text {
+  padding: 5rem;
+}
+
+.intro-text h1 {
+  color: var(--clr-secondary);
+  margin: 0;
+}
+.intro-text p {
+  max-width: 35ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Landing Start */
+
+/* Landing End */
 
 /* Responsive */
 /* Small */
@@ -133,6 +161,12 @@ header .container {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+  }
+  .intro-text h1 {
+    font-size: 3.5rem;
+  }
+  .intro-text p {
+    font-size: 1.25rem;
   }
 }
 /* Large */
