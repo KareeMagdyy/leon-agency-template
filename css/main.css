@@ -1,5 +1,5 @@
 :root {
-  --clr-primary: #24484f;
+  --clr-primary: #2c4755;
   --clr-secondary: #10cab7;
   --clr-gray: #637988;
   --clr-white: #fff;
@@ -69,7 +69,7 @@ header .container {
   min-height: 100vh;
   width: 100%;
   margin: 0;
-  padding: 2rem 2rem 0.5rem 2rem;
+  padding: 2rem;
   background-color: var(--clr-primary);
   list-style: none;
   position: absolute;
