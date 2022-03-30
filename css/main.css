@@ -177,7 +177,6 @@ header .container {
   font-size: 1.5rem;
   transition: 350ms;
   opacity: 0.8;
-  z-index: 1000;
 }
 
 .to-top:hover {
@@ -200,7 +199,6 @@ header .container {
 }
 
 .intro-text {
-  /* padding: 5rem; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -385,6 +383,7 @@ header .container {
   color: var(--clr-gray);
   line-height: 1.6;
 }
+
 /* About End */
 /* contact Start */
 .contact-content {
@@ -524,6 +523,7 @@ footer h3 a {
     width: 275px;
     text-align: center;
     position: relative;
+    z-index: 0;
   }
 
   .services-img::before {
@@ -545,12 +545,12 @@ footer h3 a {
   }
   .about-content .about-img {
     display: block;
+    z-index: 0;
     position: relative;
     width: 250px;
     height: 375px;
     box-shadow: -3px 5px 8px 2px rgb(44 71 85 / 15%);
   }
-
   .about-content .about-img::before,
   .about-content .about-img::after {
     position: absolute;
