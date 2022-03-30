@@ -169,6 +169,7 @@ header .container {
 /* To Top */
 .to-top {
   position: fixed;
+  z-index: 999;
   right: -3rem;
   bottom: 1rem;
   cursor: pointer;
