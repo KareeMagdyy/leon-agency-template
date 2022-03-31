@@ -26,7 +26,7 @@ section:not(.landing) {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
 }
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color: #f6f6f6;
 }
 img {
